@@ -4,3 +4,5 @@ requests
 sentence-transformers
 fastapi
 uvicorn
+beautifulsoup4
+lxml
