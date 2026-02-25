@@ -1,0 +1,89 @@
+# Controlled tag vocabulary for womens-health-rag corpus
+tier:
+- tier:A_patient_info
+- tier:B_peer_reviewed
+source:
+- source:NHS
+- source:MedlinePlus
+- source:PubMed
+- source:Journal
+- source:Other
+type:
+- type:patient_page
+- type:guideline_page
+- type:faq_page
+- type:journal_article
+- type:review_article
+- type:systematic_review
+- type:meta_analysis
+topic:
+- topic:menstrual_cycle
+- topic:pelvic_pain_conditions
+- topic:contraception
+- topic:pregnancy
+- topic:fertility
+- topic:menopause
+- topic:postpartum
+- topic:sexual_health
+- topic:gynecologic_cancers
+- topic:breast_health
+- topic:mental_health
+- topic:cardio_womens_health
+- topic:metabolic_womens_health
+- topic:vaginal_microbiome
+- topic:occupational_health
+- topic:womens_health_general
+- topic:general_symptoms
+sx:
+- sx:pelvic_pain
+- sx:heavy_periods
+- sx:irregular_periods
+- sx:missed_period
+- sx:ovulation_pain
+- sx:periods
+- sx:period_pain
+- sx:pms_symptoms
+- sx:headache
+- sx:bleeding_between_periods_after_sex
+- sx:pregnancy_signs
+- sx:vaginal_bleeding_pregnancy
+- sx:morning_sickness_vomiting
+- sx:reduced_fetal_movement
+- sx:dyspareunia
+ctx:
+- ctx:pregnant
+- ctx:trying_to_conceive
+- ctx:perimenopause
+- ctx:menopause
+- ctx:postpartum
+possible:
+- possible:adenomyosis
+- possible:endometriosis
+- possible:pcos
+- possible:pms
+- possible:toxic_shock_syndrome
+- possible:early_menopause
+- possible:obesity
+- possible:diabetes
+- possible:breast_density
+- possible:heart_disease
+- possible:ovarian_disorder
+- possible:ovarian_cancer
+- possible:vulvar_disorder
+- possible:vulvar_cancer
+- possible:postpartum_depression
+- possible:sti
+triage:
+- triage:self_care
+- triage:see_gp_routine
+- triage:urgent_same_day
+- triage:emergency
+access:
+  - access:pmc_fulltext
+  - access:pubmed_record
+  - access:oa_pdf
+  - access:oa_landing
+status:
+  - status:paywalled_or_unresolved
+  - status:resolver_error
+

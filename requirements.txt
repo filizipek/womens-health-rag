@@ -1,0 +1,6 @@
+faiss-cpu
+numpy
+requests
+sentence-transformers
+fastapi
+uvicorn

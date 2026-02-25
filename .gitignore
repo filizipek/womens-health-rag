@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Virtual env
+.venv/
+venv/
+ENV/
+.env
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+corpus/logs/
+corpus/answers/
+
+# Large / generated data 
+corpus/raw/
+corpus/text/
+
