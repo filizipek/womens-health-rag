@@ -6,3 +6,4 @@ fastapi
 uvicorn
 beautifulsoup4
 lxml
+pypdf
