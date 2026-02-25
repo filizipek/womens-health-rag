@@ -126,11 +126,16 @@ python3 scripts/validate_manifest.py corpus/metadata/manifest.csv corpus/metadat
 mkdir -p corpus/logs corpus/text corpus/chunks corpus/index corpus/answers
 
 python3 scripts/collect.py corpus/metadata/manifest.csv corpus/metadata/documents.jsonl corpus/logs/collector_report.json
-python3 scripts/extract_text.py corpus/metadata/documents.jsonl corpus/metadata/text_index.jsonl
+
+python3 scripts/extract_text.py corpus/metadata/documents.jsonl corpus/text corpus/metadata/text_index.jsonl
+
 python3 scripts/chunk.py corpus/metadata/text_index.jsonl corpus/chunks/chunks.jsonl 1000 150
+
 python3 scripts/embed_faiss.py corpus/chunks/chunks.jsonl corpus/index/faiss.index corpus/index/chunk_meta.jsonl
 
-ollama serve  # keep running in another terminal
+# In another terminal:
+ollama serve
+
 python3 scripts/answers.py corpus/index/faiss.index corpus/index/chunk_meta.jsonl \
   --query "pelvic pain heavy bleeding painful periods for 3 months" \
   --k 6 \
